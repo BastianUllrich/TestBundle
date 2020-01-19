@@ -3,9 +3,7 @@
 <?php $this->block('content'); ?>
 
 <ul>
-    <?php foreach ($this->members as $member): ?>
-    <li><?php echo + $member['lastname'] + ", " + $member['firstname']; ?> </li>
-    <?php endforeach; ?>
+    <li><?php echo $member; ?> </li>
 </ul>
 
 <?php $this->endblock(); ?>
