@@ -38,9 +38,8 @@ class MemberListModule extends \Module
      */
     protected function compile()
     {
-
         $this->import('Database');
         $result = Database::getInstance()->prepare("SELECT id, firstname, lastname FROM tl_member")->query();
-        $this->Template->members = $result;
+        $this->Template->members = $result[1];
     }
 }
