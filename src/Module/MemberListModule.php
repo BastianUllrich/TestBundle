@@ -1,7 +1,8 @@
 <?php
 
 namespace Baul\TestBundle\Module;
-use Contao\Database;
+use Contao\Database\Result;
+use Contao\Database\Statement;
 
 
 class MemberListModule extends \Module
