@@ -9,7 +9,7 @@ class MemberListModule extends \Module
     /**
      * @var string
      */
-    protected $strTemplate = 'mod_memberlist';
+    protected $strTemplate = 'mod_memberList';
 
     /**
      * Displays a wildcard in the back end.
