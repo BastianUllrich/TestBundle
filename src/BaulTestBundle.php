@@ -12,6 +12,7 @@ namespace Baul\TestBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
+
 class BaulTestBundle extends Bundle
 {
 }
