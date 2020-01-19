@@ -2,6 +2,7 @@
 
 // Frontend modules
 $GLOBALS['TL_LANG']['FMD']['helloWorld'] = ['Hallo Welt', 'Gibt den Text "Hallo Welt" aus'];
+$GLOBALS['TL_LANG']['FMD']['memberList'] = ['Mitgliederliste', 'Gibt eine Mitgliederliste aus'];
 
 // Backend Modules
 $GLOBALS['TL_LANG']['MOD']['examia'] = ['Klausurverwaltung', ''];
