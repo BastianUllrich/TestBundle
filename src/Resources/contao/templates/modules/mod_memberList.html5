@@ -3,7 +3,7 @@
 <?php $this->block('content'); ?>
 
 <ul>
-    <li><?php echo $member; ?> </li>
+    <li><? $this->members; ?> </li>
 </ul>
 
 <?php $this->endblock(); ?>

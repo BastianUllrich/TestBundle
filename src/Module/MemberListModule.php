@@ -42,6 +42,6 @@ class MemberListModule extends \Module
     {
         $this->import('Database');
         $result = Database::getInstance()->prepare("SELECT lastname FROM tl_member")->query();
-        $this->Template->members = $result;
+        $this->Template->members = $result[0];
     }
 }
