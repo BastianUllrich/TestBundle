@@ -4,7 +4,7 @@
 
 <ul>
     <?php foreach ($this->members as $member): ?>
-    <li><?php sprintf("$member['lastname'] . ", " . $member['firstname']"); ?> </li>
+    <li><?php echo + $member['lastname'] + ", " + $member['firstname']; ?> </li>
     <?php endforeach; ?>
 </ul>
 
