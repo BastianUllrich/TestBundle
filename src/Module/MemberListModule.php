@@ -10,7 +10,6 @@ class MemberListModule extends \Module
      * @var string
      */
     protected $strTemplate = 'mod_memberList';
-    private $result;
 
     /**
      * Displays a wildcard in the back end.
@@ -39,9 +38,8 @@ class MemberListModule extends \Module
      */
     protected function compile()
     {
-        $result = array();
         $this->import('Database');
-        $this-> result = Database::getInstance()->prepare("SELECT id, firstname, lastname FROM tl_member")->query();
-        $this->Template->members = $result[1];
+        $result = Database::getInstance()->prepare("SELECT lastname FROM tl_member")->query();
+        $this->Template->members = $result;
     }
 }
