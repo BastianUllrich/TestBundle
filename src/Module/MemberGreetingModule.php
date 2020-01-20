@@ -51,7 +51,7 @@ class MemberGreetingModule extends \Module
 
         $objUser = FrontendUser::getInstance();
 
-        $welcomeMessage = "<p><strong>Herzlich Willkommen, . " . $objUser->firstname . $objUser->lastname . "</strong></p>";
+        $welcomeMessage = "<p><strong>Herzlich Willkommen, " . $objUser->firstname . $objUser->lastname . "</strong></p>";
 
         //Begrüßungsnachricht für Studenten erweitern
         if ($objUser->isMemberOf(4)) {
