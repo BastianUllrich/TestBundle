@@ -2,8 +2,6 @@
 
 namespace Baul\TestBundle\Module;
 use Contao\Database;
-use Contao\Database\Result;
-use Contao\Database\Statement;
 
 
 class MemberListModule extends \Module
@@ -40,8 +38,12 @@ class MemberListModule extends \Module
      */
     protected function compile()
     {
+        $this->Template->members = getMemberData();
+    }
+
+    private function getMemberData() {
         $this->import('Database');
         $result = Database::getInstance()->prepare("SELECT lastname FROM tl_member")->query();
-        $this->Template->members = $result->lastname;
+        return $result->lastname;
     }
 }
