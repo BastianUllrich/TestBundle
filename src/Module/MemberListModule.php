@@ -38,7 +38,7 @@ class MemberListModule extends \Module
      */
     protected function compile()
     {
-        $this->Template->members = getMemberData();
+        $this->Template->members = $this->getMemberData();
     }
 
     public function getMemberData() {
