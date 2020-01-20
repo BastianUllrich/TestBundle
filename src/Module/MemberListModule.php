@@ -2,7 +2,8 @@
 
 namespace Baul\TestBundle\Module;
 use Contao\Database;
-use App\Controller\FrontendModule;
+use Contao\Module;
+use Contao\FrontendUser;
 
 
 class MemberListModule extends \Module
