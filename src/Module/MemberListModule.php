@@ -41,7 +41,7 @@ class MemberListModule extends \Module
         $this->Template->members = getMemberData();
     }
 
-    private function getMemberData() {
+    public function getMemberData() {
         $this->import('Database');
         $result = Database::getInstance()->prepare("SELECT lastname FROM tl_member")->query();
         return $result->lastname;
