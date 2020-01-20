@@ -4,6 +4,7 @@
 
 <ul>
     <li><?= $this->members; ?> </li>
+    <li><?= $this->user; ?> </li>
 </ul>
 
 <?php $this->endblock(); ?>

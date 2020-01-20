@@ -39,11 +39,17 @@ class MemberListModule extends \Module
     protected function compile()
     {
         $this->Template->members = $this->getMemberData();
+        $this->Template->user = $this->getUsername();
     }
 
     public function getMemberData() {
         $this->import('Database');
         $result = Database::getInstance()->prepare("SELECT lastname FROM tl_member")->query();
         return $result->lastname;
+    }
+
+    public function getUsername() {
+        $objUser = FrontendUser::getInstance();
+        return $objUser->username;
     }
 }
