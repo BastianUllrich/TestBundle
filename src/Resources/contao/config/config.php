@@ -2,6 +2,7 @@
 // Frontend modules
 $GLOBALS['FE_MOD']['examia']['memberList'] = 'Baul\TestBundle\Module\MemberListModule';
 $GLOBALS['FE_MOD']['examia']['memberGreeting'] = 'Baul\TestBundle\Module\MemberGreetingModule';
+$GLOBALS['FE_MOD']['examia']['memberUserData'] = 'Baul\TestBundle\Module\MemberUserDataModule';
 
 //Backend modules
 

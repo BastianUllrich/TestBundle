@@ -1,0 +1,9 @@
+<?php $this->extend('block_unsearchable'); ?>
+
+<?php $this->block('content'); ?>
+
+<ul>
+    <li><?= $this->firstname; ?> </li>
+</ul>
+
+<?php $this->endblock(); ?>
