@@ -1,6 +1,7 @@
 <?php $this->extend('block_unsearchable'); ?>
 
 <?php $this->block('content'); ?>
+<h2>Stammdaten anzeigen</h2>
 
 <table class="single_record">
     <tbody>
