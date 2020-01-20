@@ -23,7 +23,7 @@ class MemberListModule extends \Module
         if (TL_MODE == 'BE') {
             $template = new \BackendTemplate('be_wildcard');
 
-            $template->wildcard = '### ' . utf8_strtoupper($GLOBALS['TL_LANG']['FMD']['memberlist'][0]) . ' ###';
+            $template->wildcard = '### ' . utf8_strtoupper($GLOBALS['TL_LANG']['FMD']['memberList'][0]) . ' ###';
             $template->title = $this->headline;
             $template->id = $this->id;
             $template->link = $this->name;
@@ -42,6 +42,6 @@ class MemberListModule extends \Module
     {
         $this->import('Database');
         $result = Database::getInstance()->prepare("SELECT lastname FROM tl_member")->query();
-        $this->Template->members = $result[0];
+        $this->Template->members = $result;
     }
 }

@@ -109,6 +109,14 @@ $GLOBALS['TL_DCA']['tl_attendees_exams'] = [
             'reference' => &$GLOBALS['TL_LANG']['tl_attendees_exams'],
             'eval' => ['mandatory' => false, 'includeBlankOption' => true],
             'sql' => ['type' => 'string', 'length' => '8', 'default' => '']
+        ],
+        'seat' => [
+            'label' => &$GLOBALS['TL_LANG']['tl_attendees_exams']['seat'],
+            'inputType' => 'select',
+            'options' => ['seat1', 'seat2', 'seat3', 'seat4', 'seat5', 'seat6', 'seat7', 'seat8', 'seat9', 'seat10', 'seat11'],
+            'reference' => &$GLOBALS['TL_LANG']['tl_attendees_exams'],
+            'eval' => ['mandatory' => false, 'includeBlankOption' => true],
+            'sql' => ['type' => 'string', 'length' => '8', 'default' => '']
         ]
     ],
     'palettes' => [

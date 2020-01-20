@@ -45,6 +45,20 @@ $GLOBALS['TL_LANG']['tl_attendees_exams']['extra_time_minutes_percent'] = ['Einh
 $GLOBALS['TL_LANG']['tl_attendees_exams']['minutes'] = 'Minuten';
 $GLOBALS['TL_LANG']['tl_attendees_exams']['percent'] = 'Prozent';
 
+//Sitzplatz
+$GLOBALS['TL_LANG']['tl_attendees_exams']['seat'] = ['Sitzplatz im BliZ', 'Bitte wählen Sie den Sitzplatz im BliZ aus'];
+$GLOBALS['TL_LANG']['tl_attendees_exams']['seat1'] = 'Platz 1 (Raum A10.1.31)';
+$GLOBALS['TL_LANG']['tl_attendees_exams']['seat2'] = 'Platz 2 (Raum A10.1.31)';
+$GLOBALS['TL_LANG']['tl_attendees_exams']['seat3'] = 'Platz 3 (Raum A10.1.31)';
+$GLOBALS['TL_LANG']['tl_attendees_exams']['seat4'] = 'Platz 4 (Raum A10.1.31)';
+$GLOBALS['TL_LANG']['tl_attendees_exams']['seat5'] = 'Platz 5 (Raum A10.1.31)';
+$GLOBALS['TL_LANG']['tl_attendees_exams']['seat6'] = 'Platz 6 (Raum A10.1.31)';
+$GLOBALS['TL_LANG']['tl_attendees_exams']['seat7'] = 'Platz 7 (Raum A10.1.31)';
+$GLOBALS['TL_LANG']['tl_attendees_exams']['seat8'] = 'Platz 8 (Raum A10.1.31)';
+$GLOBALS['TL_LANG']['tl_attendees_exams']['seat9'] = 'Platz 9 (Raum A10.1.31)';
+$GLOBALS['TL_LANG']['tl_attendees_exams']['seat10'] = 'Platz 10 (Raum A10.1.30)';
+$GLOBALS['TL_LANG']['tl_attendees_exams']['seat11'] = 'Platz 11 (Raum A10.1.30)';
+
 //Hochschule | Fachbereich
 $GLOBALS['TL_LANG']['tl_attendees_exams']['department'] = ['Hochschule | Fachbereich', 'Bitte wählen Sie den Fachbereich aus, in dem die Klausur geschrieben wird'];
 $GLOBALS['TL_LANG']['tl_attendees_exams']['department1'] = 'FB 01 - BAU - Bauwesen (Gi)';
