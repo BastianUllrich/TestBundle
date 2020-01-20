@@ -41,7 +41,12 @@ class MemberUserDataModule extends \Module
     protected function compile()
     {
         $firstname = $this->getUserData()->firstname;
+        $lastname =  $this->getUserData()->lastname;
+        $email = $this->getUserData()->email;
+
         $this->Template->firstname = $firstname;
+        $this->Template->lastname = $lastname;
+        $this->Template->email = $email;
     }
 
     public function getUserData() {
