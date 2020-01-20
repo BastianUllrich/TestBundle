@@ -120,7 +120,7 @@ $GLOBALS['TL_DCA']['tl_attendees_exams'] = [
         ]
     ],
     'palettes' => [
-        'default' => 'attendee_id,exam_id,status,rehab_devices,rehab_devices_others,assistant_id,extra_time,extra_time_minutes_percent'
+        'default' => 'attendee_id,exam_id,status,rehab_devices,rehab_devices_others,assistant_id,extra_time,extra_time_minutes_percent,seat'
     ],
 ];
 
