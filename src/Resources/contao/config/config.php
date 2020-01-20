@@ -1,7 +1,7 @@
 <?php
 // Frontend modules
-$GLOBALS['FE_MOD']['examia']['helloWorld'] = 'Baul\TestBundle\Module\HelloWorldModule';
 $GLOBALS['FE_MOD']['examia']['memberList'] = 'Baul\TestBundle\Module\MemberListModule';
+$GLOBALS['FE_MOD']['examia']['memberGreeting'] = 'Baul\TestBundle\Module\MemberGreetingModule';
 
 //Backend modules
 

@@ -1,9 +1,0 @@
-<?php $this->extend('block_searchable'); ?>
-
-<?php $this->block('content'); ?>
-
-<?= $this->message; ?>
-<br>
-<?= $this->nextmsg; ?>
-
-<?php $this->endblock(); ?>
