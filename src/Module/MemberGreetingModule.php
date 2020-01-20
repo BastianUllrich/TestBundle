@@ -55,17 +55,22 @@ class MemberGreetingModule extends \Module
 
         //Begrüßungsnachricht für Studenten erweitern
         if ($objUser->isMemberOf(4)) {
-            $welcomeMessage .= "<p>Hier können Sie sich für Prüfungen mit genehmigten Nachteilsausgleich anmelden und den Anmeldestatus überprüfen.</p>";
+            $welcomeMessage .= "<p>Unter dem Menüpunkt \"Benutzer\" können Sie Ihre Stammdaten einsehen und sich ausloggen.</p>";
+            $welcomeMessage .= "<p>Unter dem Menüpunkt \"Klausuren\" können Sie sich für Prüfungen mit genehmigten Nachteilsausgleich anmelden und den Anmeldestatus überprüfen.</p>";
         }
 
         //Begrüßungsnachricht für Administratoren erweitern
         if ($objUser->isMemberOf(5)) {
-            $welcomeMessage .= "<p>Hier können Sie alle Prüfungen, Studenten und Aufsichten verwalten.</p>";
+            $welcomeMessage .= "<p>Unter dem Menüpunkt \"Benutzer\" können Sie Studenten, Aufsichten und Administratoren anlegen sowie ";
+            $welcomeMessage .= "deren Stammdaten bearbeiten.<br />";
+            $welcomeMessage .= "Außerdem können Sie Studenten und Aufsichten löschen.</p>";
+            $welcomeMessage .= "<p>Unter dem Menüpunkt \"Klausuren\" können Sie alle Prüfungen verwalten und die Aufsichtsverteilung vornehmen.</p>";
         }
 
         //Begrüßungsnachricht für Aufsichten erweitern
         if ($objUser->isMemberOf(7)) {
-            $welcomeMessage .= "<p>Hier können Sie einsehen, zu welcher Prüfung Sie eingeteilt sind.</p>";
+            $welcomeMessage .= "<p>Unter dem Menüpunkt \"Benutzer\" können Sie Ihre Stammdaten einsehen und sich ausloggen.</p>";
+            $welcomeMessage .= "<p>Unter dem Menüpunkt \"Klausuren\" können Sie einsehen, zu welcher Prüfung Sie eingeteilt sind sowie Details zur Prüfung einsehen.</p>";
         }
 
         return $welcomeMessage;
